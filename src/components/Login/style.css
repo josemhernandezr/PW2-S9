@@ -1,0 +1,21 @@
+#info{
+    background-image: url('./imgs/fondo_sm.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+@media (min-width: 1024px) {
+    #info{
+        background-image: url('./imgs/fondo_md.jpg');
+    }
+}
+#titulo{
+    color: #fff;
+}
+#titulo h1{
+    font-size: 3rem;
+}
+#titulo p{
+    padding-top: 1rem;
+    font-size: 1rem;
+}

@@ -1,0 +1,12 @@
+#barras{
+    background-image: url('./imgs/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+@media (min-width: 1024px) {
+    #barras{
+        background-image: url('./imgs/fondo.jpg');
+        height: inherit;
+    }
+}
