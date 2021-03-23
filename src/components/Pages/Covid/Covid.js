@@ -18,13 +18,6 @@ function Covid (){
   const [recovered, setrecovered] = useState();
 
   function snap(snapshot){
-    // const datos=[];
-    // snapshot.forEach((childSnapshot) => {
-    //   var childKey = childSnapshot.key;
-    //   var childData = childSnapshot.val();
-    //   datos.push(childKey)
-    // });
-    // setdata(datos);
     setdata(snapshot.val());
     setcode(snapshot.child('code').val());
     setconfirmed(snapshot.child('confirmed').val());
@@ -52,20 +45,8 @@ function Covid (){
                }
              })
          }else{
-
-          // snapshot.forEach((childSnapshot) => {
-          //   var childKey = childSnapshot.key;
-          //   var childData = childSnapshot.val();
-          //   console.log(childKey+":"+childData);
-          // });
-         
-          // const datos=snapshot.val();
-          // for (const key in datos) {
-          //   console.log(key+":"+datos[key]);
-          // }
           snap(snapshot);
           console.log(data);
-
          }
        });
     },
