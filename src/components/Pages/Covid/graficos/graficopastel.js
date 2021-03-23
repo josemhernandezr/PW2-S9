@@ -33,7 +33,7 @@ const Dona = ({country,code,confirmed,critical,deaths,recovered}) => {
             <h2 className="text-l sm:text-xl font-semibold text-center w-full p-5 text-white bg-yellow-500">
                 Casos de Covid-19 en {country}-{code}
             </h2>
-            <div class="flex flex-wrap overflow-hidden h-96">
+            <div class="flex flex-wrap overflow-hidden">
                 <div class="w-full overflow-hidden lg:w-1/2 p-5 border-2 border-gray-200">
                     <Doughnut
                         className="w-2/5 h-2/5"

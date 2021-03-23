@@ -7,12 +7,9 @@ import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 function App() {
   return (
     <Router>
-      <body>
-        <header>
-          <NavBar>
-            
-          </NavBar>
-        </header>
+        <div>
+          <NavBar></NavBar>
+        </div>
         <main>
             <Switch>
                 <Route path="/" exact>
@@ -26,7 +23,6 @@ function App() {
                 </Route>
             </Switch>
         </main>
-      </body>  
     </Router>
    
   );

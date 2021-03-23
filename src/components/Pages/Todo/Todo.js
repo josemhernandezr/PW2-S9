@@ -64,7 +64,7 @@ function Todo(){
   }
 
   return (
-    <div className="flex flex-col items-center w-full overflow-hidden pt-32 sm:pt-16">
+    <div className="flex flex-col items-center w-full overflow-hidden mt-32 md:mt-20">
       <Titulo></Titulo>
       <div className="flex flex-wrap overflow-hidden">
       <NewTodo

@@ -18,6 +18,13 @@ function Covid (){
   const [recovered, setrecovered] = useState();
 
   function snap(snapshot){
+    // const datos=[];
+    // snapshot.forEach((childSnapshot) => {
+    //   var childKey = childSnapshot.key;
+    //   var childData = childSnapshot.val();
+    //   datos.push(childKey)
+    // });
+    // setdata(datos);
     setdata(snapshot.val());
     setcode(snapshot.child('code').val());
     setconfirmed(snapshot.child('confirmed').val());
@@ -45,8 +52,20 @@ function Covid (){
                }
              })
          }else{
+
+          // snapshot.forEach((childSnapshot) => {
+          //   var childKey = childSnapshot.key;
+          //   var childData = childSnapshot.val();
+          //   console.log(childKey+":"+childData);
+          // });
+         
+          // const datos=snapshot.val();
+          // for (const key in datos) {
+          //   console.log(key+":"+datos[key]);
+          // }
           snap(snapshot);
           console.log(data);
+
          }
        });
     },
@@ -68,9 +87,9 @@ function Covid (){
   }
   return (
     <section>
-      <div className="flex items-center w-full overflow-hidden bg-blue-500 pt-32 sm:pt-20">
+      <div className="flex items-center w-full overflow-hidden bg-blue-500 mt-32 md:mt-20">
           <h1 className="text-xl sm:text-3xl font-semibold text-center w-full m-5 text-white">CORONAVIRUS</h1>
-          <button onClick={actualizar} className="bg-green-500 text-white p-2 m-3 rounded-lg hover:bg-white hover:text-green-500">
+          <button onClick={actualizar} className="bg-green-500 text-white p-2 mr-5 rounded-lg hover:bg-white hover:text-green-500">
               <svg class="h-6 w-6 currentcolor"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <polyline points="23 4 23 10 17 10" />  <polyline points="1 20 1 14 7 14" />  <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15" /></svg>
           </button>
       </div>
